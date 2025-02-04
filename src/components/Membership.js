@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://space-haven-3.onrender.com";
 
 const Membership = () => {
   const [memberships, setMemberships] = useState([]);
@@ -21,6 +21,7 @@ const Membership = () => {
 
     const fetchData = async () => {
       try {
+        console.log("Fetching data from API_URL:", API_URL);
         const userResponse = await fetch(`${API_URL}/api/users/${userId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
