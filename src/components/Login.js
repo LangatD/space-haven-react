@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL = process.env.REACT_APP_API_URL;
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });

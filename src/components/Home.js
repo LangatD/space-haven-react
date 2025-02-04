@@ -8,9 +8,9 @@ const Home = () => {
       <div className="relative h-[400px] bg-[url('https://via.placeholder.com/1920x400')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-4xl font-bold mb-4">Find cowrking spaces near you</h1>
+            <h1 className="text-4xl font-bold mb-4">Find coworking spaces near you</h1>
             <p className="text-lg mb-6">
-              Flex  ible offices and workspaces in a modern coworking environment built for small businesses and teams.
+              Flexible offices and workspaces in a modern coworking environment built for small businesses and teams.
             </p>
             <Link
               to="/spaces"
