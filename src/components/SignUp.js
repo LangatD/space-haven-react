@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { supabase } from "../supabaseClient";
-import { useNavigate } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,7 +14,7 @@ const SignUp = () => {
     setError("");
   
     try {
-      const response = await fetch("http://127.0.0.1:5555/api/users", {
+      const response = await fetch(`${API_URL}/api/users`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),

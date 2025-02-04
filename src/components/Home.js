@@ -10,13 +10,13 @@ const Home = () => {
           <div className="text-center text-white">
             <h1 className="text-4xl font-bold mb-4">Find cowrking spaces near you</h1>
             <p className="text-lg mb-6">
-              Flexible offices and workspaces in a modern coworking environment built for small businesses and teams.
+              Flex  ible offices and workspaces in a modern coworking environment built for small businesses and teams.
             </p>
             <Link
               to="/spaces"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
             >
-              Find Your Space
+              Find Your Spacem
             </Link>
           </div>
         </div>
@@ -29,27 +29,27 @@ const Home = () => {
           {/* Space Card 1 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/400x250"
-              alt="Space 1"
+              src="https://images.pexels.com/photos/1957478/pexels-photo-1957478.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Naihub"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Private Office</h3>
-              <p className="text-gray-600 mb-4">Hamilton, ON</p>
-              <p className="text-blue-600 font-bold">$200/day</p>
+              <p className="text-gray-600 mb-4">Nairobi</p>
+              <p className="text-blue-600 font-bold">Ksh.1000/day</p>
             </div>
           </div>
 
           {/* Space Card 2 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/400x250"
+              src="https://images.pexels.com/photos/260931/pexels-photo-260931.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Space 2"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Shared Workspace</h3>
-              <p className="text-gray-600 mb-4">Hamilton, ON</p>
+              <p className="text-gray-600 mb-4">Nairobi</p>
               <p className="text-blue-600 font-bold">$50/day</p>
             </div>
           </div>
@@ -57,14 +57,14 @@ const Home = () => {
           {/* Space Card 3 */}
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
-              src="https://via.placeholder.com/400x250"
+              src="https://images.pexels.com/photos/416320/pexels-photo-416320.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Space 3"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Meeting Room</h3>
-              <p className="text-gray-600 mb-4">Hamilton, ON</p>
-              <p className="text-blue-600 font-bold">$100/hour</p>
+              <p className="text-gray-600 mb-4">Kisumu</p>
+              <p className="text-blue-600 font-bold">ksh.500/hour</p>
             </div>
           </div>
         </div>

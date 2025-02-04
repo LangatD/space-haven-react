@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-const API_URL = "http://127.0.0.1:5555";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
@@ -25,6 +25,7 @@ const Login = () => {
       }
 
       localStorage.setItem("token", result.access_token); // ✅ Store JWT token
+      localStorage.setItem("user_id", result.user_id);
       navigate("/profile"); // ✅ Redirect after successful login
     } catch (error) {
       setError(error.message);

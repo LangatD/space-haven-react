@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home"; 
 import SignUp from "./components/SignUp";
 import Login from "./components/Login"; 
+import AnimatedPage from "./components/AnimatedPage";
 
 function App() {
   return (
@@ -18,15 +19,15 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/spaces" element={<SpaceList />} />
-          <Route path="/space/:id" element={<SpaceDetail />} />
-          <Route path="/Profile" element={<UserProfile />} />
-          <Route path="/membership" element={<Membership />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
+        <Route path="/" element={<AnimatedPage><Home /></AnimatedPage>} />
+          <Route path="/spaces" element={<AnimatedPage><SpaceList /></AnimatedPage>} />
+          <Route path="/space/:id" element={<AnimatedPage><SpaceDetail /></AnimatedPage>} />
+          <Route path="/Profile" element={<AnimatedPage><UserProfile /></AnimatedPage>} />
+          <Route path="/membership" element={<AnimatedPage><Membership /></AnimatedPage>} />
+          <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
+          <Route path="/signup" element={<AnimatedPage><SignUp /></AnimatedPage>} />
+          <Route path="/login" element={<AnimatedPage><Login /></AnimatedPage>} />
+        
         </Routes>
         <Footer />
       </div>
