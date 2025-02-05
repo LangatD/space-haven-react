@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
-
+const API_URL = process.env.REACT_APP_API_URL;
 const SpaceList = () => {
   const [spaces, setSpaces] = useState([]);
   const [loading, setLoading] = useState(true);
